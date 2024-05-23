@@ -1,10 +1,14 @@
-a=eval(input("enter the list"))
-b=input("enter what you want replace")
-c=input("what you want to replace with")
-for i in a:     
-    print(i)
-    if i == b:
-        a[i]=c
-        
-print(a)
-    
+def compound_interest(principal, rate, time):
+    """
+    Calculate compound interest.
+    """
+
+    amount = principal * (1 + rate) ** time
+    return amount - principal
+
+principal = float(input("enter principal amount")
+rate = float(input("enter rate of interest")
+time = float(input("enter time period")
+ci = compound_interest(principal, rate, time)
+print("Compound Interest:", ci)
+
